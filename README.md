@@ -105,4 +105,4 @@ Calling `POST /reports` again with no body returns the same id with HTTP 200 and
 **Idempotency.** The check in `POST /reports` (whether a report already exists for today) protects against duplicate rows and wasted render work when the same request is sent more than once — most commonly because a client retries after a timeout, or the frontend double-submits a button click. A concrete example where a missing check costs money or trust: a financial reporting portal that charges per generated statement. If a customer's browser fires two requests because of a slow network retry, they get billed twice and see two invoice PDFs — an instant support ticket, a refund, and lost trust in your billing.
 
 ## Screenshot
-![Report page 1](image.png)
+![Report page 1](screenshot.png)
